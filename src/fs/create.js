@@ -1,5 +1,5 @@
 const create = async () => {
-    // Write your code here 
+    const fileContent = 'I am fresh and young';
 };
 
 await create();
