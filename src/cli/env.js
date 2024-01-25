@@ -1,5 +1,4 @@
-
-
+import process from 'node:process'
 
 const parseEnv = () => {
     const envVars = process.env;
