@@ -8,13 +8,12 @@ const list = async () => {
   const dirToList = `${__dirname}\\files`;
   try {
     const files = await fs.readdir(dirToList);
-    for (const file of files){
-        console.log(file);
+    for (const file of files) {
+      console.log(file);
     }
   } catch (err) {
-    throw new Error('FS operation failed')
+    throw new Error("FS operation failed");
   }
-  
 };
 
 await list();
