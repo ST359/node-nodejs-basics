@@ -1,4 +1,3 @@
-import { error } from "node:console";
 import fs from "node:fs/promises";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
