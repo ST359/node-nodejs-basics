@@ -7,8 +7,8 @@ import zlib from "node:zlib";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const decompress = async () => {
-  const fileToDecompress = `${__dirname}\\files\\archive.gz`;
-  const result = `${__dirname}\\files\\fileToCompress.txt`;
+  const fileToDecompress = join(__dirname, 'files', 'archive.gz');
+  const result = join(__dirname, 'files', 'fileToCompress.txt');
   const readStream = createReadStream(fileToDecompress);
   const writeStream = createWriteStream(result);
   const unzip = zlib.createUnzip();
