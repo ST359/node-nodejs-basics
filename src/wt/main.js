@@ -27,7 +27,7 @@ function createWorker(num) {
 }
 const performCalculations = async () => {
   let results = [];
-  for (let i = 10; i <= 10 + numOfCores; i++) {
+  for (let i = 10; i < 10 + numOfCores; i++) {
     try {
       results.push(await createWorker(i));
     } catch {
